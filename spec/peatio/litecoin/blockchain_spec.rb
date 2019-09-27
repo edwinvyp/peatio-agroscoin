@@ -1,23 +1,23 @@
-RSpec.describe Peatio::Litecoin::Blockchain do
+RSpec.describe Peatio::Agroscoin::Blockchain do
   context :features do
     it 'defaults' do
-      blockchain1 = Peatio::Litecoin::Blockchain.new
-      expect(blockchain1.features).to eq Peatio::Litecoin::Blockchain::DEFAULT_FEATURES
+      blockchain1 = Peatio::Agroscoin::Blockchain.new
+      expect(blockchain1.features).to eq Peatio::Agroscoin::Blockchain::DEFAULT_FEATURES
     end
 
     it 'override defaults' do
-      blockchain2 = Peatio::Litecoin::Blockchain.new(cash_addr_format: true)
+      blockchain2 = Peatio::Agroscoin::Blockchain.new(cash_addr_format: true)
       expect(blockchain2.features[:cash_addr_format]).to be_truthy
     end
 
     it 'custom feautures' do
-      blockchain3 = Peatio::Litecoin::Blockchain.new(custom_feature: :custom)
-      expect(blockchain3.features.keys).to contain_exactly(*Peatio::Litecoin::Blockchain::SUPPORTED_FEATURES)
+      blockchain3 = Peatio::Agroscoin::Blockchain.new(custom_feature: :custom)
+      expect(blockchain3.features.keys).to contain_exactly(*Peatio::Agroscoin::Blockchain::SUPPORTED_FEATURES)
     end
   end
 
   context :configure do
-    let(:blockchain) { Peatio::Litecoin::Blockchain.new }
+    let(:blockchain) { Peatio::Agroscoin::Blockchain.new }
     it 'default settings' do
       expect(blockchain.settings).to eq({})
     end
