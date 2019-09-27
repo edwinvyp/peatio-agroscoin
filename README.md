@@ -1,13 +1,13 @@
-# Peatio::Litecoin
+# Peatio::Agroscoin
 
-Peatio litecoin plugin for Rubykube stack
+Peatio agroscoin plugin for Rubykube stack
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'peatio-litecoin'
+gem 'peatio-agroscoin'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install peatio-litecoin
+    $ gem install peatio-agroscoin
 
 ## Usage
 
@@ -26,12 +26,12 @@ For Peatio Litecoin plugin integration you need to do the following steps:
 
 1. Add peatio-litecoin gem into your Gemfile.plugin
 ```ruby
-gem 'peatio-litecoin', '~> 0.2.0'
+gem 'peatio-agroscoin', '~> 0.1.0'
 ```
 
 2. Run `bundle install` for updating Gemfile.lock
 
-3. Build custom Peatio [docker image with Litecoin plugin](https://github.com/rubykube/peatio/blob/master/docs/plugins.md#build)
+3. Build custom Peatio [docker image with Agroscoin plugin](https://github.com/rubykube/peatio/blob/master/docs/plugins.md#build)
 
 4. Push your image using `docker push`
 
