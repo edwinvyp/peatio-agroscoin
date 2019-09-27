@@ -3,7 +3,7 @@ require 'faraday'
 require 'better-faraday'
 
 module Peatio
-  module Litecoin
+  module Agroscoin
     class Client
       Error = Class.new(StandardError)
       class ConnectionError < Error; end
