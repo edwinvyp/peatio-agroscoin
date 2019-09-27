@@ -1,12 +1,12 @@
 # Integration.
 
-For Peatio Litecoin plugin integration you need to do the following steps:
+For Peatio AGROSCOIN plugin integration you need to do the following steps:
 
 ## Image Build.
 
-1. Add peatio-litecoin gem into your Gemfile.plugin
+1. Add peatio-agroscoin gem into your Gemfile.plugin
 ```ruby
-gem 'peatio-litecoin', '~> 0.1.0'
+gem 'peatio-agroscoin', '~> 0.1.0'
 ```
 
 2. Run `bundle install` for updating Gemfile.lock
@@ -15,7 +15,7 @@ gem 'peatio-litecoin', '~> 0.1.0'
 
 4. Push your image using `docker push`
 
-5. Update your deployment to use image with peatio-litecoin gem
+5. Update your deployment to use image with peatio-agroscoin gem
 
 ## Peatio Configuration.
 
