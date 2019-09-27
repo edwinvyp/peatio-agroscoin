@@ -1,5 +1,5 @@
-RSpec.describe Peatio::Litecoin do
+RSpec.describe Peatio::Agroscoin do
   it "has a version number" do
-    expect(Peatio::Litecoin::VERSION).not_to be nil
+    expect(Peatio::Agroscoin::VERSION).not_to be nil
   end
 end
