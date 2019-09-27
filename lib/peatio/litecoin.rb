@@ -3,16 +3,16 @@ require "active_support/core_ext/enumerable"
 require "peatio"
 
 module Peatio
-  module Litecoin
+  module Agroscoin
     require "bigdecimal"
     require "bigdecimal/util"
 
-    require "peatio/litecoin/blockchain"
-    require "peatio/litecoin/client"
-    require "peatio/litecoin/wallet"
+    require "peatio/agroscoin/blockchain"
+    require "peatio/agroscoin/client"
+    require "peatio/agroscoin/wallet"
 
-    require "peatio/litecoin/hooks"
+    require "peatio/agroscoin/hooks"
 
-    require "peatio/litecoin/version"
+    require "peatio/agroscoin/version"
   end
 end
