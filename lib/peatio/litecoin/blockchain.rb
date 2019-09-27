@@ -1,6 +1,6 @@
 
 module Peatio
-  module Litecoin
+  module Agroscoin
     # TODO: Processing of unconfirmed transactions from mempool isn't supported now.
     class Blockchain < Peatio::Blockchain::Abstract
 
