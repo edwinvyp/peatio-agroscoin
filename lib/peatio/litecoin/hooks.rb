@@ -1,5 +1,5 @@
 module Peatio
-  module Litecoin
+  module Agroscoin
     module Hooks
       BLOCKCHAIN_VERSION_REQUIREMENT = "~> 1.0.0"
       WALLET_VERSION_REQUIREMENT = "~> 1.0.0"
@@ -26,13 +26,13 @@ module Peatio
         end
 
         def register
-          Peatio::Blockchain.registry[:litecoin] = Litecoin::Blockchain.new
-          Peatio::Wallet.registry[:litecoind] = Litecoin::Wallet.new
+          Peatio::Blockchain.registry[:agroscoin] = Agroscoin::Blockchain.new
+          Peatio::Wallet.registry[:agroscoind] = Agroscoin::Wallet.new
         end
       end
 
       if defined?(Rails::Railtie)
-        require "peatio/litecoin/railtie"
+        require "peatio/agroscoin/railtie"
       else
         check_compatibility
         register
