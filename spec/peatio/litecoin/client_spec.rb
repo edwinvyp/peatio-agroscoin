@@ -1,11 +1,11 @@
-RSpec.describe Peatio::Litecoin::Client do
+RSpec.describe Peatio::Agroscoin::Client do
   let(:uri) { "http://user:password@127.0.0.1:19332" }
   let(:uri_without_authority) { "http://127.0.0.1:19332" }
 
   before(:all) { WebMock.disable_net_connect! }
   after(:all) { WebMock.allow_net_connect! }
 
-  subject { Peatio::Litecoin::Client.new(uri) }
+  subject { Peatio::Agroscoin::Client.new(uri) }
 
   context :initialize do
     it { expect{ subject }.not_to raise_error }
@@ -50,7 +50,7 @@ RSpec.describe Peatio::Litecoin::Client do
 
       it do
         expect{ subject.json_rpc(:methodnotfound) }.to \
-          raise_error(Peatio::Litecoin::Client::ResponseError, "Method not found (-32601)")
+          raise_error(Peatio::Agroscoin::Client::ResponseError, "Method not found (-32601)")
       end
     end
 
@@ -69,7 +69,7 @@ RSpec.describe Peatio::Litecoin::Client do
 
       it do
         expect{ subject.json_rpc(:notfound) }.to \
-          raise_error(Peatio::Litecoin::Client::Error)
+          raise_error(Peatio::Agroscoin::Client::Error)
       end
     end
 
